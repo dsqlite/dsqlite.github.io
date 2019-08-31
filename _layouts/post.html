@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="container">
+	<div id="main">
+		<article class="article">
+			<h1 class="article-title">
+				<a href="{{ site.url }}/{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+			</h1>
+			<p class="article-date">{{ page.date|date:'%Y-%m-%d' }}</p>
+			<div class="article-body markdown">
+				{{ content }}
+			</div>
+		</article>
+		{% if site.disqus %}
+		<div class="comments">
+			<div id="disqus_thread"></div>
+		</div>
+		{% endif %}
+	</div>
+	<aside id="side">
+		<div id="toc"></div>
+	</aside>
+</div>

@@ -1,0 +1,30 @@
+# jekyll config
+
+# site
+title: 'DSQLite'
+description: 'DSQLite - 为你的网站增加精简版的 Disqus 评论加载服务'
+keywords: 'DSQLite, disqus, disqus 数据中转, disqus 加载代理, disqus 数据代理'
+url: 'https://dsqlite.com/'
+baseurl: ''
+
+
+# build
+permalink: '/:title'
+exclude: [
+    'node_modules',
+    'package.json',
+    'Gruntfile.js',
+    'README.md'
+]
+
+
+# googleanalytics
+google_analytics:
+    id: 'UA-146841916-1'
+    domain: 'dsqlite.com'
+
+
+# disqus
+disqus:
+    shortname: 'dsqlite'
+

@@ -1,0 +1,11 @@
+# for jekyll project
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+node_module
+Gemfile
+Gemfile.lock

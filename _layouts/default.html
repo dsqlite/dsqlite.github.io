@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html id="dsqlite" lang="zh-CN" class="nojs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords"  content="{{ site.keywords }}">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}">
+</head>
+<body class="page">
+	<div id="root">
+		<div id="app">
+			<header id="header">
+				<div class="container">
+					<h1 class="brand">
+						<a href="{{ site.url }}" title="dsqlite 首页">{{ site.title }}</a>
+					</h1>
+					<nav class="nav">
+						<ul class="main">
+							<li><a href="/" title="dsqlite 功能介绍">功能介绍</a></li>
+							<li><a href="/pricing" title="dsqlite 付费套餐">付费套餐</a></li>
+						</ul>
+						<ul class="menu">
+							<li><a href="/sign" title="dsqlite 账号注册">账号注册</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div id="container">
+				{{ content }}
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<div class="links">
+						<a href="/about" title="关于我们">关于我们</a>
+						<a href="/faq" title="常见问题">常见问题</a>
+						<a href="/terms" title="用户条款">用户条款</a>
+						<a href="/privacy" title="隐私政策">隐私政策</a>
+					</div>
+					<div class="rights">
+						<span title="&copy; 2019 {{ site.title }}">&copy; 2019 <a href="{{ site.url }}">{{ site.title }}</a>.</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript" id="js-config">
+		{% if site.google_analytics %}var _gaId = '{{ site.google_analytics.id }}';var _gaDomain = '{{ site.google_analytics.domain }}';{% endif %}
+		{% if site.disqus %}var disqus_shortname = '{{ site.disqus.shortname }}';{% endif %}
+	</script>
+	<script src="{{ '/assets/js/application.js' | prepend: site.baseurl }}" id="js-application"></script>
+</body>
+</html>

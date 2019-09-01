@@ -924,7 +924,34 @@ ul, ol {
 }
 
 
+/* site page404 */
+
+.site.page404 {}
+.site.page404 .error404 {
+	position: relative;
+	min-height: 25rem;
+}
+.site.page404 .error404:before {
+	position: absolute;
+	top: 5rem;
+	z-index: -10;
+	content: 'HTTP 404';
+	color: #EEE;
+	font-size: 20rem;
+}
+.site.page404 .error404 h1 {
+	font-size: 2.5rem;
+    margin: 3rem 0;
+    margin-bottom: 1.5rem;
+}
+.site.page404 .error404 .markdown {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+
 /* users - sign */
+
 .user.sign .intro {
 	margin: 3rem auto;
 	max-width: 640px;
@@ -967,6 +994,9 @@ ul, ol {
 	#container .side {
 		float: none;
 		display: none;
+	}
+	.site.page404 .error404:before {
+		font-size: 10rem;
 	}
 	
 }

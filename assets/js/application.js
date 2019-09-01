@@ -40,7 +40,7 @@
 	}
 
 	var disqus_thread = document.getElementById('disqus_thread');
-	if (!disqus) {
+	if (!disqus_thread) {
 		return
 	}
 
